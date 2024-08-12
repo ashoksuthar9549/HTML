@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary_color: #ffffff;
+    --secodary_color: #202020;
+    --blue_color: #008dd2;
+    --primary_background: #f1f1f1;
+    --secondary_background: #ffffff;
+    --black_background: #202020;
+    --button_hover: #235395;
+    --button_normal: linear-gradient(45deg, #0A7FC3, #235395);
+}
+
+body{
+    font-family: 'Montserrat';
+}
+
+h1, h2{
+    font-size: 65px;
+    color: var(--blue_color);
+}
+
+h3{
+    font-size: 50px;
+    color: var(--secodary_color);
+}
+h4{
+    font-size: 80px;
+    color: var(--secodary_color);
+}
+h5{
+    font-size: 36px;
+    color: var(--blue_color);
+}
+h6{
+    font-size: 24px;
+    color: var(--secodary_color);
+}
+
+p{
+    font-size: 18px;
+    color: var(--blue_color);
+}

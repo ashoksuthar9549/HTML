@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'balance';
+  src:  url('../fonts/balance.eot?sfgr96');
+  src:  url('../fonts/balance.eot?sfgr96#iefix') format('embedded-opentype'),
+    url('../fonts/balance.ttf?sfgr96') format('truetype'),
+    url('../fonts/balance.woff?sfgr96') format('woff'),
+    url('../fonts/balance.svg?sfgr96#balance') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'balance' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play-Icon:before {
+  content: "\e905";
+}
+.icon-search-icon:before {
+  content: "\e900";
+}
+.icon-heart-icon:before {
+  content: "\e901";
+}
+.icon-stethoscope-icon:before {
+  content: "\e902";
+}
+.icon-injection-icon:before {
+  content: "\e903";
+}
+.icon-facebook-with-circle:before {
+  content: "\e904";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-telegram:before {
+  content: "\ea95";
+}

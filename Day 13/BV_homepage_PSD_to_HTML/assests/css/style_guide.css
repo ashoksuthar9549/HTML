@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #ffffff;
+    --secondary-color: #202020;
+    --blue-color: #008dd2;
+    --red-color: #c01a1a;
+    --primary-background: #f1f1f1;
+    --secondary-background: #ffffff;
+    --gray-background: #f3f3f3;
+    --black-background: #202020;
+    --button-color1: #0A7FC3; 
+    --button-color2: #235395; 
+    --button-hover: #235395;
+    --border-color: #939393;
+    --border-color2: #cccccc;
+    --border-color3: #f1f2f2;
+    --light-color: #989898;
+    --form-label-color: #6f6f6f;
+    --checkbox-color: #e6e8ed;
+    --social-icon-color1: #3b5999;
+    --social-icon-color2: #55acef;
+    --social-icon-color3: #007ab9;
+    --social-icon-color4: #6a453c;
+    --social-icon-color5: #dc4e42;
+    --copyright-color: #fefefe;
+}
+
+header, section, article, aside, footer, picture, nav{
+    display: block;
+}
+
+h1, h2{
+    font-size: 65px;
+    /* color: var(--blue-color); */
+}
+
+h3{
+    font-size: 50px;
+    color: var(--secodary-color);
+}
+h4{
+    font-size: 80px;
+    color: var(--secodary-color);
+}
+h5{
+    font-size: 36px;
+    color: var(--blue-color);
+}
+h6{
+    font-size: 24px;
+    color: var(--secodary-color);
+}
+
+p{
+    font-size: 18px;
+    color: var(--blue-color);
+}
+
+.f-14{
+    font-size: 14px;
+    color: var(--secodary-color);
+}
+
+.f-16{
+    font-size: 16px;
+    color: var(--secodary-color);
+}
+
+.container{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 0 160px; */
+}
+
+.button{
+    border-radius: 5px;
+    background-image: linear-gradient(45deg, var(--button-color1) 0%, var(--button-color2) 100%);
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.button:hover{
+    background: var(--button-hover);
+}
+
+
+.d-flex {   
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.f-d-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.f-d-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.f-d-row-rev {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.f-d-column-r {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+.justify-start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.justify-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.justify-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.justify-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.justify-evenly {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.justify-around {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.align-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.align-end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+}
+
+.align-f-start {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.align-f-end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.flex-wrap-rev {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.obj-fit-cover{
+    object-fit: cover;
+}

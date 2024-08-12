@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'balance';
+    src:  url('../fonts/balance.eot?tc1wgn');
+    src:  url('../fonts/balance.eot?tc1wgn#iefix') format('embedded-opentype'),
+      url('../fonts/balance.ttf?tc1wgn') format('truetype'),
+      url('../fonts/balance.woff?tc1wgn') format('woff'),
+      url('../fonts/balance.svg?tc1wgn#balance') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'balance' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    font-feature-settings: "liga";
+    -webkit-font-variant-ligatures: discretionary-ligatures;
+    font-variant-ligatures: discretionary-ligatures;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-handshake:before {
+    content: "\e900";
+  }
+  .icon-bulb:before {
+    content: "\e901";
+  }
+  .icon-dice:before {
+    content: "\e915";
+  }
+  .icon-book:before {
+    content: "\e91f";
+  }
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans';
+}
+
+header .container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li{
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #EF7CC9;
+}
+
+main .container{
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+}
+
+.left_section{
+    width: 50%;
+}
+
+.right_section{
+    width: 50%;
+    padding-left: 80px;
+}
+
+.image_section{
+    width: 500px;
+    height: 500px;
+    padding: 0 10px;
+    z-index: 9;
+}
+
+.image_section::after{
+    content: "";
+    background-image: linear-gradient(45deg, #FDC936, #F07DC7);
+    width: 100%;
+    height: 400px;
+    display: inline-block;
+    translate: 10% -90%;
+    z-index: -1;
+    position: relative;
+}
+
+.image_section img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.right_section h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #488DF4;
+}
+
+.right_section h6{
+    font-size: 15px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.bottom_boxes{
+    display: flex;
+    margin: 0 0 -150px -300px;
+}
+
+.box{
+    width: 100%;
+    height: 150px;
+    padding: 45px 40px;
+    text-align: center;
+}
+
+.box i{
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.box small{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.box-1{
+    background: #4BC4C1;
+}
+.box-2{
+    background: #FECB36;
+}
+.box-3{
+    background: #EF7CC9;
+}
+.box-4{
+    background: #488DF4;
+}

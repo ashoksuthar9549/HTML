@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Cantarell';
+    src: url('/assests/fonts/Cantarell-Regular.eot');
+    src: url('/assests/fonts/Cantarell-Regular.eot');
+    src: url('/assests/fonts/Cantarell-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assests/fonts/Cantarell-Regular.woff2') format('woff2'),
+        url('/assests/fonts/Cantarell-Regular.woff') format('woff'),
+        url('/assests/fonts/Cantarell-Regular.ttf') format('truetype'),
+        url('/assests/fonts/Cantarell-Regular.svg#Cantarell-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cantarell';
+    src: url('/assests/fonts/Cantarell-BoldItalic.eot');
+    src: url('/assests/fonts/Cantarell-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assests/fonts/Cantarell-BoldItalic.woff2') format('woff2'),
+        url('/assests/fonts/Cantarell-BoldItalic.woff') format('woff'),
+        url('/assests/fonts/Cantarell-BoldItalic.ttf') format('truetype'),
+        url('/assests/fonts/Cantarell-BoldItalic.svg#Cantarell-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cantarell';
+    src: url('/assests/fonts/Cantarell-Bold.eot');
+    src: url('/assests/fonts/Cantarell-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assests/fonts/Cantarell-Bold.woff2') format('woff2'),
+        url('/assests/fonts/Cantarell-Bold.woff') format('woff'),
+        url('/assests/fonts/Cantarell-Bold.ttf') format('truetype'),
+        url('/assests/fonts/Cantarell-Bold.svg#Cantarell-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cantarell';
+    src: url('/assests/fonts/Cantarell-Italic.eot');
+    src: url('/assests/fonts/Cantarell-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/assests/fonts/Cantarell-Italic.woff2') format('woff2'),
+        url('/assests/fonts/Cantarell-Italic.woff') format('woff'),
+        url('/assests/fonts/Cantarell-Italic.ttf') format('truetype'),
+        url('/assests/fonts/Cantarell-Italic.svg#Cantarell-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+body{
+    background-color: #292D33;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+main{
+    margin: 3em 3em 1em 3em;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: Cantarell;
+}
+
+h2 + div{
+    background-image: linear-gradient(#56779d, #292d33);
+    margin: 2rem 0;
+    width: 250px;
+}
+
+h2 + div > img{
+    transform: translate(29px, 30px);
+    height: 250px;
+}
+
+.box_section{
+    display: flex;
+    flex-direction: column;
+}
+
+.box div + p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.box{
+    width: 230px;
+    height: 250px;
+    background-color: #ffffff;
+    color: #000000;
+    transform: translate(49px, -50px);
+    margin-bottom: 1em;
+    padding: 1.5em 1em;
+    text-align: center;
+}
+
+.box img{
+    height: 50px;
+}
+
+.box h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 1em 0;
+    color: #111111;
+    letter-spacing: normal;
+    font-family: Cantarell;
+    line-height: 1.2;
+}
+
+.box p{
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    color: #111111;
+    font-family: 'Open Sans',sans-serif;
+}
+
+#bottom-text{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    margin: 2.5em 0;
+}
+
+footer{
+    height: 100px;
+    text-align: center;
+    background: #333333;
+    padding: 2.5em 2em;
+}
+
+footer p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+footer a{
+    color: #b6d0ed;
+}
+
+#box-bottom-text{
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    bottom: -100%;
+}
+
+#box-bottom-text span{
+    border-bottom: 1px solid #ffffff ;
+}
+
+/* responsive design */
+@media screen and (min-width: 991px) {
+    nav{
+        padding: 1em 10em;
+    }
+
+    main{
+        margin: 0;
+    }
+
+    h2{
+        font-size: 4.5em;
+        margin: 0 2.2em;
+    }
+
+    h2 + div{
+        width: 500px;
+    }
+
+    h2 + div > img{
+        width: 650px;
+        height: auto;
+        margin-top: 2em;
+        margin-left: 8em ;
+    }
+
+    .box{
+        width: 350px;
+    }
+
+    .box_section{
+        width: 450px;
+        transform: translate(150%, -200%);
+        height: 230px;
+    }
+
+    #box-bottom-text{
+        font-size: 14px;
+        font-weight: normal;
+        transform: translate(150px, 50px);
+        position: static;
+        width: 150px;
+    }
+}

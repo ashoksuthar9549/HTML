@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: #24ade3;
+    position: sticky;
+    top: 0;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav img{
+    margin: 10px 50px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li{
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #f5f5f5;
+}
+
+#banner_section{
+    margin: 1rem auto;
+    text-align: center;
+}
+
+#banner_section img{
+    max-width: 600px;
+}
+
+#content_section{
+    margin: 1rem auto;
+}
+
+#content_section p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #263238;
+}
+
+#content_section h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#content_section div{
+    width: 70%;
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 500;
+    color: #263238;
+}
+
+#content_section img{
+    float: left;
+    width: 100px;
+    margin: 30px;
+}
+
+#image_gallery{
+    display: flex;
+    justify-content: center;
+}
+
+#image_gallery img{
+    width: 300px;
+    margin: 1rem;
+    display: inline-block;
+    box-shadow: 0px 3px 10px 3px rgba(149, 149, 149, 0.5);
+    border-radius: 50px;
+}
+
+footer{
+    background-color: #350c72;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    height: 100px;
+}
+
+footer ul li{
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #f5f5f5;
+}
+
+footer p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #f5f5f5;
+    margin-bottom: 1rem;
+}
+
+#parent_box{
+    min-height: 500px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9rem;
+}
+
+#child_box{
+    border: 2px solid #24ade3;
+    height: auto;    
+}

@@ -1,0 +1,92 @@
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    background-color: green;
+}
+
+#paragraph2{
+    background-color: yellow;
+}
+
+.paragraph{
+    background-color: red;
+}
+
+section h2{
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    color: aqua;
+}
+
+section ul > li{
+    background-color: violet;
+}
+
+div ~ p{
+    background: green;
+    color: white;
+}
+
+div + p{
+    background: red;
+    color: yellow;
+}
+
+button[type="button"]{
+    margin: 1rem;
+    width: 200px;
+    height: 50px;
+    background-color: #24ade3;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: green;
+}
+
+a{
+    margin: 1rem;
+    background-color: #24ade3;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: yellow;
+    color: #24ade3;
+}
+
+a:active{
+    background-color: gray;
+    color: #24ade3;
+}
+
+/* a:visited{
+    background-color: violet;
+    color: #24ade3;
+} */
+
+p::first-letter{
+    background-color: violet;
+}
+
+a + div{
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    margin: 5rem auto;
+    background: #ffffff url('/assests/images.jpeg') no-repeat scroll center;
+}

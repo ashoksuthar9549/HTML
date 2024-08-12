@@ -1,0 +1,193 @@
+@import "../common/variables";
+@import "../common/fonts";
+@import "../common/mixins";
+
+header{
+    background: $secondary-color;
+
+    nav{
+        @include d-flex;
+        @include justify-between;
+        @include align-center;
+
+        picture{
+            margin: 0 20px;
+        }
+
+        ul{
+            li{
+                &.nav-link{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @include device-sm{
+        nav{
+            ul{
+                @include d-flex;
+                @include justify-between;
+                @include align-center;
+                gap: 10px;
+                margin: 0 10px;
+                list-style: none;
+
+                li{
+                    &.nav-link{
+                        display: inline-block;
+                    }
+
+                    a{
+                        @include text-decoration-none;
+                        color: $primary-color;
+                        @include font-detail(14px, 500);
+
+                        &:hover{
+                            color: $black-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include device-md{
+        nav{
+            ul{
+                gap: 20px;
+                margin: 0 15px;
+
+                li{
+
+                    a{
+                        @include font-detail(16px, 500);
+                    }
+                }
+            }
+        }
+    }
+
+    @include device-lg{
+        nav{
+            ul{
+                gap: 25px;
+                margin: 0 20px;
+
+                li{
+
+                    a{
+                        @include font-detail(18px, 600);
+
+                        span{
+                            &.icon-search{
+                                @include icon-search;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero_section{
+    background: url(../../../public/images/banner_image.jpg);
+    @include text-center;
+
+    h1{
+        @include h1;
+        margin: 0;
+        padding: 30px 0 0 0;
+    }
+
+    p{
+        @include p;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .hero_buttons{
+        @include d-flex;
+        @include align-center;
+        @include justify-center;
+        padding: 0 0 20px 0;
+
+        .btn-primary{
+            @include btn;
+        }
+
+        .btn-secondary{
+            @include btn-secondary;
+        }
+    }
+
+    @include device-sm{
+        padding: 20px;
+
+        h1{
+            @include font-detail(22px, 700);
+        }
+
+        p{
+            @include font-detail(16px, 400);
+        }
+
+        .hero_buttons{
+            .btn-primary{
+                @include font-detail(12px, 600);
+            }
+    
+            .btn-secondary{
+                @include font-detail(12px, 600);
+            }
+        }
+    }
+
+    @include device-md{
+        padding: 30px;
+
+        h1{
+            @include font-detail(24px, 700);
+        }
+
+        p{
+            @include font-detail(18px, 400);
+        }
+
+        .hero_buttons{
+            padding: 30px 0 0 0;
+
+            .btn-primary{
+                @include font-detail(13px, 600);
+            }
+    
+            .btn-secondary{
+                @include font-detail(13px, 600);
+            }
+        }
+    }
+
+    @include device-lg{
+        padding: 150px 100px;
+
+        h1{
+            @include font-detail(24px, 700);
+        }
+
+        p{
+            @include font-detail(18px, 400);
+        }
+
+        .hero_buttons{
+            padding: 50px 0 0 0;
+            .btn-primary{
+                @include font-detail(14px, 600);
+            }
+    
+            .btn-secondary{
+                @include font-detail(14px, 600);
+            }
+        }
+    }
+}

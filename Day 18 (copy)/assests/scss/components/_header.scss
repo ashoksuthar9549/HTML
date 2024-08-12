@@ -1,0 +1,41 @@
+@import "../common/variables";
+@import "../common/fonts";
+@import "../common/mixins";
+
+header{
+    background: $secondary-color;
+
+    nav{
+        @include d-flex;
+        @include justify-between;
+        @include align-center;
+
+        ul{
+            @include d-flex;
+            @include justify-between;
+            @include align-center;
+
+            list-style: none;
+            
+            li{
+                &.nav-link{
+                    display: none;
+                }
+
+                a{
+                    .icon-search{
+                        @include icon-search;
+                    }
+    
+                    .icon-cart{
+                        @include icon-cart;
+                    }
+    
+                    .icon-menu{
+                        @include icon-menu;
+                    }
+                }
+            }
+        }
+    }
+}
